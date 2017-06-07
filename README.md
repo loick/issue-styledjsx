@@ -1,35 +1,3 @@
-# NPM Module Boilerplate [![Build Status](https://img.shields.io/travis/romainberger/npm-module-boilerplate/master.svg?style=flat-square)](https://travis-ci.org/romainberger/npm-module-boilerplate)
+# Issue raised for the library styled-jsx
 
-Personal boilerplate for modules.
-
-Includes:
-
-* [Babel](https://babeljs.io/) stage 0
-* [Mocha](https://mochajs.org/), [Chai](http://chaijs.com/) for testing
-* [Flow](http://flowtype.org/) for static type checking
-* [Travis CI](https://travis-ci.com/) for continuous integration
-
-## New project initialization
-
-```shell
-$ git clone
-$ mv npm-module-boilerplate awesome-module
-$ cd awesome-module
-$ rm -rf .git
-$ git init
-$ npm install
-```
-
-## Usage
-
-Run tests:
-
-```shell
-$ npm test
-```
-
-Run flow
-
-```shell
-$ npm run flow
-```
+context: When I use this library on classic JSX tags, the parent of the `<style>` tag gets the data-attribute. However, when I create the parent tag through a React.createElement (or with other ways), I don't get the same result. 
